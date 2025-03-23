@@ -22,7 +22,7 @@ $H_0$ There is no difference between the average score on the WORDSUM test and l
 $H_a$ There is a significant difference in average score on the WORDSUM test between at least two levels of DEGREE  
 
 ```{r}
-boxplot(WORDSUM~DEGREE,data=davisdata)
+basicCN <- ggplot(ucdavis1,aes(x=WORDSUM,y=DEGREE))
 ```
 # Methods
 
